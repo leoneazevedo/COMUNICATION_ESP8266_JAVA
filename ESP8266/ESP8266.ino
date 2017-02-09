@@ -1,4 +1,3 @@
-#include <Ultrasonic.h>
 #include <ESP8266WiFi.h>
 #include <WiFiClient.h>
 
@@ -34,7 +33,7 @@ void setup() {
   while (!client.connect(host, 3000)) {
 
     delay(1000);
-    Serial.println("Não conectado no servidor");
+    Serial.println("Não conectado ao servidor");
 
   }
   
